@@ -7,7 +7,7 @@ namespace Calculator
         static void Main(string[] args)
         {
             //lab 1
-            #region
+            #region lab1
             //int exit = 0;
             //while (exit == 0)
             //{
@@ -64,12 +64,22 @@ namespace Calculator
             #endregion // lab 1
 
             //lab 2
+            #region lab2
+            //CalculatorLibrary.Calculator calculator = new CalculatorLibrary.Calculator();
+            //double result;
+            //result = calculator.DoOperation(4, 5, "a");
+            //Console.WriteLine(result);
+            #endregion
 
-            CalculatorLibrary.Calculator calculator = new CalculatorLibrary.Calculator();
-            double result;
-            result = calculator.DoOperation(4, 5, "a");
-
-            Console.WriteLine(result);
+            //lab 3 #8
+            #region lab3
+            Console.WriteLine("8. Вычислить площадь равностороннего треугольника, если известна длина его стороны.");
+            Console.WriteLine("Введите длину стороны:");
+            double a = Convert.ToDouble(Console.ReadLine());
+            double h = (Math.Pow(a, 2) - Math.Pow((a / 2), 2));
+            double square = a*Math.Sqrt(h)/2;
+            Console.WriteLine($"Площадь: {square}");
+            #endregion
         }
     }
 }
