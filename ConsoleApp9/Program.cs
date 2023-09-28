@@ -73,12 +73,32 @@ namespace Calculator
 
             //lab 3 #8
             #region lab3
-            Console.WriteLine("8. Вычислить площадь равностороннего треугольника, если известна длина его стороны.");
-            Console.WriteLine("Введите длину стороны:");
-            double a = Convert.ToDouble(Console.ReadLine());
-            double h = (Math.Pow(a, 2) - Math.Pow((a / 2), 2));
-            double square = a*Math.Sqrt(h)/2;
-            Console.WriteLine($"Площадь: {square}");
+            //Console.WriteLine("8. Вычислить площадь равностороннего треугольника, если известна длина его стороны.");
+            //Console.WriteLine("Введите длину стороны:");
+            //double a = Convert.ToDouble(Console.ReadLine());
+            //double h = (Math.Pow(a, 2) - Math.Pow((a / 2), 2));
+            //double square = a * Math.Sqrt(h) / 2;
+            //Console.WriteLine($"Площадь: {square}");
+            #endregion
+
+            //lab 4
+            #region lab4
+            Human hm = new Human("John", "Johnson", false);
+            hm.Print();
+
+            // 2. Использование экземпляра класса Citizen
+            Citizen ct = new Citizen("Petr", "Petrenko", false, "A101ksdl233", "New City");
+            Console.WriteLine("------------------------");
+            ct.Print(); // вывести значение полей класса
+
+            // 3. Использование экземпляра класса ForeignCitizen
+            ForeignCitizen fc = new ForeignCitizen("Ivanov", "Ivan", false,
+                "0230902ADK", "London", "023329032JJK",
+                Convert.ToDateTime("02.02.2020"), Convert.ToDateTime("03.03.2085"));
+            Console.WriteLine("------------------");
+            fc.Print();
+
+
             #endregion
         }
     }
